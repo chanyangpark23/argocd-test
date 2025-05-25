@@ -1,6 +1,15 @@
-# app1-manifests/namespace.yaml
+# app1-manifests/namespaces.yaml
 apiVersion: v1
 kind: Namespace
 metadata:
   name: app1
-
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app2
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app3
