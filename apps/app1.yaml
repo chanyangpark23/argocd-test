@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/chanyangpark23/app1-repo.git   # <- 임시로 적어둔 값
+    repoURL: https://github.com/chanyangpark23/argocd-test.git  # ✅ 현재 리포
     targetRevision: HEAD
-    path: manifests
+    path: app1-manifests                                         # ✅ 현재 리포 안의 디렉토리
   destination:
     server: https://kubernetes.default.svc
     namespace: app1
@@ -18,4 +18,3 @@ spec:
       prune: true
     syncOptions:
       - CreateNamespace=true
-

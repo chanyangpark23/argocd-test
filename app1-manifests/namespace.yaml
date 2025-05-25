@@ -1,0 +1,6 @@
+# app1-manifests/namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app1
+
